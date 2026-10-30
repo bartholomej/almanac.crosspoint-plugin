@@ -1,0 +1,21 @@
+{
+  "name": "almanac.crosspoint-plugin",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "yarn@4.18.1",
+  "scripts": {
+    "typecheck": "tsc",
+    "upload": "node scripts/check-release.ts && node scripts/upload.ts",
+    "preversion": "node scripts/check-release.ts",
+    "version": "node scripts/sync-version.ts && git add almanac.crosspoint-plugin",
+    "postversion": "git push && git push --follow-tags",
+    "release:patch": "git checkout master && npm version patch -m \"chore(update): patch release %s 🐛\"",
+    "release:minor": "git checkout master && npm version minor -m \"chore(update): release %s 🚀\"",
+    "release:major": "git checkout master && npm version major -m \"chore(update): major release %s 💥\""
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}

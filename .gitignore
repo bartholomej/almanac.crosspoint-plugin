@@ -1,0 +1,5 @@
+node_modules/
+.yarn/*
+!.yarn/patches
+.DS_Store
+almanac.crosspoint-plugin/config.json
