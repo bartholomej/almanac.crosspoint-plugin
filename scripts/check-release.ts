@@ -1,4 +1,5 @@
 import { existsSync, readFileSync, statSync } from 'node:fs'
+import { buildNumber, builds } from './build-number.ts'
 
 type Shared = Record<'title' | 'description' | 'author' | 'version', string>
 type Manifest = Shared & { name: string; files: string[] }
@@ -19,6 +20,13 @@ for (const file of manifest.files) {
   if (!existsSync(`${dir}/${file}`)) errors.push(`${file} is listed in manifest files but missing`)
 }
 if (statSync(`${dir}/device.json`).size > 8192) errors.push('device.json is over the 8 KB firmware limit')
+// A release sends exactly its own build; between releases a build may run ahead, to try the next one.
+const expected = buildNumber(manifest.version)
+const sent = builds(readFileSync(`${dir}/device.json`, 'utf8'))
+if (!sent.length) errors.push('device.json sends no build')
+if (sent.some((build) => (tag ? build !== expected : build < expected))) {
+  errors.push(`device.json sends build ${sent.join(', ')}, version ${manifest.version} is ${expected}`)
+}
 
 if (errors.length) {
   console.error(errors.join('\n'))

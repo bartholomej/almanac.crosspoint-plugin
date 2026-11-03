@@ -15,7 +15,7 @@
     }
   },
   "browse": {
-    "url": "https://almanac.im/api/catalog?page={page}&limit={limit}&family={firmware_family}&firmware={firmware_version}",
+    "url": "https://almanac.im/api/catalog?page={page}&limit={limit}&family={firmware_family}&firmware={firmware_version}&build=400",
     "headers": { "Authorization": "Bearer {token}" },
     "items": "items",
     "fields": {
@@ -24,9 +24,15 @@
       "detail_author": "author",
       "description": "description",
       "details_url": "details_url",
-      "details_format": "details_format"
+      "details_format": "details_format",
+      "id": "id"
     },
     "page_size": 8
+  },
+  "download": {
+    "url": "https://img.almanac.im/sleep.bmp?row={id}&build=400",
+    "headers": { "Authorization": "Bearer {token}" },
+    "filename": "sleep.bmp"
   },
   "events": {
     "reader.session": {
