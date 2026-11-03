@@ -1,10 +1,10 @@
 # Almanac: Reading Stats
 
-Reading stats like CrossInk's, on the official CrossPoint firmware. No custom firmware needed.
+Reading stats on the official CrossPoint firmware. No other firmware, no account.
 
 Sends each reading session to your stats server and shows your stats under Home > Plugins > Almanac: Reading Stats. Nothing to do while reading.
 
-Almanac is in beta and early access: things may change or break along the way. Privacy and terms: https://almanac.im/privacy
+Almanac is in beta and early access: things may change or break along the way. Privacy and terms: www.almanac.im/privacy
 
 ## Setup
 

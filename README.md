@@ -4,15 +4,15 @@
 
 # Almanac: Reading Stats
 
-#### Reading time, streaks and progress on your reader and the web. Stats like CrossInk's, on the official CrossPoint firmware. _(beta)_
+#### Reading time, streaks and progress on your reader and the web. Just a plugin for the official CrossPoint firmware: no other firmware, no account. _(beta)_
 
-**Free · No sign-up · Anonymous** · [almanac.im](https://almanac.im)
+**Free · No sign-up · Anonymous** · [www.almanac.im](https://almanac.im)
 
 </div>
 
 | On your reader | When you read | Every book |
 | :---: | :---: | :---: |
-| <img src="docs/reader.png" width="250" alt="The plugin on the reader: today, all time and the books in progress"> | <img src="docs/charts.png" width="250" alt="Reading time by day and by hour on almanac.im"> | <img src="docs/books.png" width="250" alt="Books with their progress on almanac.im"> |
+| <img src="docs/reader.png" width="250" alt="The plugin on the reader: today, all time and the books in progress"> | <img src="docs/charts.png" width="250" alt="Reading time by day and by hour on www.almanac.im"> | <img src="docs/books.png" width="250" alt="Books with their progress on www.almanac.im"> |
 
 ## 🔒 Privacy first
 
@@ -84,6 +84,6 @@ If you find Almanac useful and you are brave enough consider [making a donation]
 
 Powered by nature 🗻, wind 💨, tea 🍵 and beer 🍺
 
-[📊 almanac.im](https://almanac.im) • [⭐ Star on GitHub](https://github.com/bartholomej/almanac.crosspoint-plugin) • [🔒 Privacy](https://almanac.im/privacy)
+[📊 www.almanac.im](https://almanac.im) • [⭐ Star on GitHub](https://github.com/bartholomej/almanac.crosspoint-plugin) • [🔒 Privacy](https://almanac.im/privacy)
 
 </div>
